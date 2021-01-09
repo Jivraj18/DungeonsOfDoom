@@ -1,0 +1,21 @@
+
+Dungeons of Doom can be played on a variety of maps.  When you first run the game, you have a choice 3 maps to play; a small, medium or large map. Input either 1,2 or 3 in order to select the map you want to play on.  Each map has a series of tiles:
+
+ - 'P' which represents the players current position.
+ - ' . ' is an empty tile.
+ - 'G' marks a piece of gold.
+ - 'E' human can use this tile to exit the dungeon.
+ - '#' represents a wall. The player cannot move into the wall.
+
+The player can move around the map and pick up gold. The goal is to get enough gold to meet a win condition and then exit the dungeon. In each turn, the player can send a command and if the command is successful, an action takes place.  A variety of commands can be inputted:
+ - 'look' allows the user to get a 5x5 view of where they are in the map.
+ - 'hello' prints a string which tells the user the win condition, so the amount of gold required.
+ - 'gold' prints a string, telling the user how much gold they have.
+ - 'move n' allows the player to move north 1 step.
+ - 'move e' allows the player to move east 1 step.
+ - 'move s' allows the player to move south 1 step.
+ - 'move w' allows the player to move west 1 step.
+ - 'pickup' allows the player to pickup the gold if they are on the same tile as the gold.
+ - 'quit' ends the game.
+
+When a player inputs 'quit' the game ends. If they have all the gold required and they are standing on an exit tile, then the player wins. However, if the player enters 'quit' and they either do not have the amount of gold required or if they are not on an exit tile then the player loses.
